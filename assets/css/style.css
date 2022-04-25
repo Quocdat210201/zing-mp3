@@ -1,0 +1,53 @@
+.border-bottom{
+    border-bottom: 1px solid #362f40;
+    padding-bottom:15px
+}
+.mt-15{
+    margin-top:15px
+}
+
+.mt-10{
+    margin-top:10px
+}
+
+.mt-13{
+    margin-top:13px
+}
+
+.mt-23{
+    margin-top: 23px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mr-20{
+    margin-right:  20px;
+}
+
+
+
+.mb-90{
+    margin-bottom: 90px !important;
+}
+
+.purple-color{
+    background: var(--purple-color) !important;
+}
+
+.btn_transparent {
+    background-color: transparent !important;
+    border: 1px solid;
+    width: 80%;
+    padding: 6px 0;
+}
+
+.btn_transparent:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.black-color{
+    color: black !important;
+}

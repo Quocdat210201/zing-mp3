@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing MP3</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <!--Reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png"
+        href="https://static-zmp3.zmdcdn.me/skins/zmp3-v5.2/images/icon_zing_mp3_60.png" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="grid">
+            <div class="banner-left">
+                <div class="banner-logo">
+                    <img class="banner-logo-img" src="./assets/img/logo-zing.svg" alt="">
+                </div>
+                <div class="slide-bar">
+                    <div class="banner-menu banner-menu-top">
+                        <ul class="banner-menu__list">
+                            <li class="banner-menu__item">
+                                <a href="" class="banner-menu__link">
+                                    <i class="banner-menu__icon fa-solid fa-user-large"></i>
+                                    <span class="banner-title">Cá nhân</span>
+                                </a>
+                            </li>
+                            <li class="banner-menu__item">
+                                <a href="" class="banner-menu__link">
+                                    <i class="banner-menu__icon fas fa-compact-disc"></i>
+                                    <span class="banner-title">Khám phá</span>
+                                </a>
+                            </li>
+                            <li class="banner-menu__item">
+                                <a href="" class="banner-menu__link">
+                                    <i class="banner-menu__icon fas fa-chart-line"></i>
+                                    <span class="banner-title">#zingchart</span>
+                                </a>
+                            </li>
+                            <li class="banner-menu__item">
+                                <a href="" class="banner-menu__link">
+                                    <i class="banner-menu__icon fas fa-broadcast-tower"></i>
+                                    <span class="banner-title">Radio</span>
+                                    <span class="banner-live">LIVE</span>
+                                </a>
+                            </li>
+                            <li class="banner-menu__item mb-10">
+                                <a href="" class="banner-menu__link">
+                                    <i class="banner-menu__icon far fa-list-alt"></i>
+                                    <span class="banner-title">Theo dõi</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="banner__line"></div>
+                    <div class="banner-menu banner-menu-bottom">
+                        <div class="banner-menu-library-top">
+                            <ul class="banner-menu__list">
+                                <li class="banner-menu__item ">
+                                    <a href="" class="banner-menu__link mt-13">
+                                        <i class="banner-menu__icon fa-solid fa-music"></i>
+                                        <span class="banner-title">Nhạc mới</span>
+                                    </a>
+                                </li>
+                                <li class="banner-menu__item">
+                                    <a href="" class="banner-menu__link">
+                                        <i class="banner-menu__icon fab fa-buromobelexperte"></i>
+                                        <span class="banner-title">Thể Loại</span>
+                                    </a>
+                                </li>
+                                <li class="banner-menu__item">
+                                    <a href="" class="banner-menu__link">
+                                        <i class="banner-menu__icon fas fa-star"></i>
+                                        <span class="banner-title">Top 100</span>
+                                    </a>
+                                </li>
+                                </li>
+                                <li class="banner-menu__item">
+                                    <a href="" class="banner-menu__link">
+                                        <i class="banner-menu__icon fas fa-photo-video"></i>
+                                        <span class="banner-title">MV</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="banner-menu-library-bottom">
+                            <p class="banner-menu-heading">Đăng nhập để khám phá playlist của bạn</p>
+                            <button class="banner-menu-btn black-color">Đăng nhập</button>
+                        </div>
+                        <div class="banner-menu-library-bottom mb-10 purple-color">
+                            <p class="banner-menu-heading">Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
+                            <button class="banner-menu-btn btn_transparent">Nâng cấp vip</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__line"></div>
+                <div class=" banner-add-playlist mt-23">
+                    <i class="banner-menu__icon fas fa-plus"></i>
+                    <span class="banner-title">Tạo playlist mới</span>
+                </div>
+            </div>
+            <div class="container-content-right ">
+                <div class="header">
+                    <div class="header__undo mobile-hiden js__sub-color">
+                        <i class="fas fa-arrow-left hover js__toast"></i>
+                        <i class="fas fa-arrow-right hover js__toast header__undo--disble"></i>
+                    </div>
+                    <div class="header__width-search js__backgroundColor">
+                        <i class="fas fa-search header__width-search-icon js__sub-color"></i>
+                        <input placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV . . ." type="text"
+                            class="header__width-search-input">
+                        <div class="header__width-search-sub">
+                            <span class="header__width-search-sub-header js__main-color">Đề xuất cho bạn</span>
+                            <ul class="header__width-search-sub-list">
+                                <li class="header__width-search-sub-item">
+                                    <a href="#" class="header__width-search-sub-item-link">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <span class="js__sub-color">là ai</span>
+                                    </a>
+                                </li>
+                                <li class="header__width-search-sub-item">
+                                    <a href="#" class="header__width-search-sub-item-link">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <span class="js__sub-color">adele</span>
+                                    </a>
+                                </li>
+                                <li class="header__width-search-sub-item">
+                                    <a href="#" class="header__width-search-sub-item-link">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <span class="js__sub-color">chung tình</span>
+                                    </a>
+                                </li>
+                                <li class="header__width-search-sub-item">
+                                    <a href="#" class="header__width-search-sub-item-link">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <span class="js__sub-color">zing choice</span>
+                                    </a>
+                                </li>
+                                <li class="header__width-search-sub-item">
+                                    <a href="#" class="header__width-search-sub-item-link">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <span class="js__sub-color">#zingchart</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="header__right">
+                        <div class="header__theme js__sub-color js__backgroundColor">
+                            <i class="fas fa-tshirt header__setting-icon"></i>
+                        </div>
+                        <div class="header__upload mobile-hiden js__sub-color js__toast js__backgroundColor hover">
+                            <i class="fas fa-upload header__setting-icon"></i>
+                        </div>
+
+                        <div class="header__right-overlay hiden"></div>
+                        <div class="header__setting mobile-hiden js__sub-color js__backgroundColor">
+                            <i class="fas fa-cog header__setting-icon"></i>
+                            <ul class="header__setting-list ">
+                                <li class="header__setting-item">
+                                    <i class="fas fa-ban"></i>
+                                    Danh sách chặn
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="far fa-play-circle"></i>
+                                    Chất lượng nhạc
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fas fa-external-link-square-alt"></i>
+                                    Trình phát nhạc
+                                </li>
+                                <span class="header__setting-line"></span>
+                                <li class="header__setting-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    Giới thiệu
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="far fa-flag"></i>
+                                    Góp ý
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    Liên hệ
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fab fa-adversal"></i>
+                                    Quảng cáo
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fas fa-notes-medical"></i>
+                                    Thoả thuận sử dụng
+                                </li>
+                                <li class="header__setting-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Chính sách bảo mật
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__user hover">
+                            <a href="https://www.facebook.com/profile.php?id=100039358682032">
+                                <img src="./assets/img/avatar.jpg" alt="user" class="header__user-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="content-wrapper__overview">
+                        <div class="music-option">
+                            <ul class="music-option-list">
+                                <li class="music-option-item">
+                                    <a href="" class="music-option-link active">Tổng quan</a>
+                                </li>
+                                <li class="music-option-item">
+                                    <a href="" class="music-option-link">Bài hát</a>
+                                </li>
+                                <li class="music-option-item">
+                                    <a href="" class="music-option-link">Playlists</a>
+                                </li>
+                                <li class="music-option-item">
+                                    <a href="" class="music-option-link">Nghệ sĩ</a>
+                                </li>
+                                <li class="music-option-item">
+                                    <a href="" class="music-option-link">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="music-playlist">
+                            <div class="music-playlist-cd cd">
+                                <div class="music-playlist-cd-thumb" style="background-image: url('./assets/img/song5.jpg')">
+                                </div>
+                            </div>
+                            <div class="playlist">
+                                <div class="song">
+                                    <div class="song-index">
+                                        <i class="song-index-icon fa-solid fa-music"></i>
+                                    </div>
+                                    <div class="thumb" style="background-image: url('./assets/img/song5.jpg')">
+                                    </div>
+                                    <div class="info-song">
+                                        <h3 class="info-song-name">Nơi này có anh</h3>
+                                        <p class="info-song-singer">Sơn Tùng MTP</p>
+                                    </div>
+                                    <div class="time-song">
+                                        <span>04:39</span>
+                                    </div>
+                                    <div class="song-tym">
+                                        <i class="far fa-heart music-controls-left-actions-tym-non"></i>
+                                    </div>
+                                    <div class="option">
+                                        <i class="option-icon fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="song-index">
+                                        <i class="song-index-icon fa-solid fa-music"></i>
+                                    </div>
+                                    <div class="thumb" style="background-image: url('./assets/img/song5.jpg')">
+                                    </div>
+                                    <div class="info-song">
+                                        <h3 class="info-song-name">Nơi này có anh</h3>
+                                        <p class="info-song-singer">Sơn Tùng MTP</p>
+                                    </div>
+                                    <div class="time-song">
+                                        <span>04:39</span>
+                                    </div>
+                                    <div class="song-tym">
+                                        <i class="far fa-heart music-controls-left-actions-tym-non"></i>
+                                    </div>
+                                    <div class="option">
+                                        <i class="option-icon fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="song-index">
+                                        <i class="song-index-icon fa-solid fa-music"></i>
+                                    </div>
+                                    <div class="thumb" style="background-image: url('./assets/img/song5.jpg')">
+                                    </div>
+                                    <div class="info-song">
+                                        <h3 class="info-song-name">Nơi này có anh</h3>
+                                        <p class="info-song-singer">Sơn Tùng MTP</p>
+                                    </div>
+                                    <div class="time-song">
+                                        <span>04:39</span>
+                                    </div>
+                                    <div class="song-tym">
+                                        <i class="far fa-heart music-controls-left-actions-tym-non"></i>
+                                    </div>
+                                    <div class="option">
+                                        <i class="option-icon fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="song-index">
+                                        <i class="song-index-icon fa-solid fa-music"></i>
+                                    </div>
+                                    <div class="thumb" style="background-image: url('./assets/img/song5.jpg')">
+                                    </div>
+                                    <div class="info-song">
+                                        <h3 class="info-song-name">Nơi này có anh</h3>
+                                        <p class="info-song-singer">Sơn Tùng MTP</p>
+                                    </div>
+                                    <div class="time-song">
+                                        <span>04:39</span>
+                                    </div>
+                                    <div class="song-tym">
+                                        <i class="far fa-heart music-controls-left-actions-tym-non"></i>
+                                    </div>
+                                    <div class="option">
+                                        <i class="option-icon fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="song-index">
+                                        <i class="song-index-icon fa-solid fa-music"></i>
+                                    </div>
+                                    <div class="thumb" style="background-image: url('./assets/img/song5.jpg')">
+                                    </div>
+                                    <div class="info-song">
+                                        <h3 class="info-song-name">Nơi này có anh</h3>
+                                        <p class="info-song-singer">Sơn Tùng MTP</p>
+                                    </div>
+                                    <div class="time-song">
+                                        <span>04:39</span>
+                                    </div>
+                                    <div class="song-tym">
+                                        <i class="far fa-heart music-controls-left-actions-tym-non"></i>
+                                    </div>
+                                    <div class="option">
+                                        <i class="option-icon fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="song-index">
+                                        <i class="song-index-icon fa-solid fa-music"></i>
+                                    </div>
+                                    <div class="thumb" style="background-image: url('./assets/img/song5.jpg')">
+                                    </div>
+                                    <div class="info-song">
+                                        <h3 class="info-song-name">Nơi này có anh</h3>
+                                        <p class="info-song-singer">Sơn Tùng MTP</p>
+                                    </div>
+                                    <div class="time-song">
+                                        <span>04:39</span>
+                                    </div>
+                                    <div class="song-tym">
+                                        <i class="far fa-heart music-controls-left-actions-tym-non"></i>
+                                    </div>
+                                    <div class="option">
+                                        <i class="option-icon fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <div class="song">
+                                    <div class="song-index">
+                                        <i class="song-index-icon fa-solid fa-music"></i>
+                                    </div>
+                                    <div class="thumb" style="background-image: url('./assets/img/song5.jpg')">
+                                    </div>
+                                    <div class="info-song">
+                                        <h3 class="info-song-name">Nơi này có anh</h3>
+                                        <p class="info-song-singer">Sơn Tùng MTP</p>
+                                    </div>
+                                    <div class="time-song">
+                                        <span>04:39</span>
+                                    </div>
+                                    <div class="song-tym">
+                                        <i class="far fa-heart music-controls-left-actions-tym-non"></i>
+                                    </div>
+                                    <div class="option">
+                                        <i class="option-icon fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-wrapper__songs">
+
+                    </div>
+                    <div class="content-wrapper__playlists">
+                        
+                    </div>
+                    <div class="content-wrapper__artist">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="music-controls">
+            <div class="level music-controls__container row">
+                <div class="c-3">
+                    <div class="music-controls-left">
+                        <div class="music-controls-left-img cd">
+                            <div class="cd-thumb" style="background-image: url('./assets/img/song5.jpg')">
+                            </div>
+                        </div>
+                        <div class="music-controls-left-content">
+                            <span class="music-controls-left-content-song">
+                                Nơi này có anh
+                            </span>
+                            <span class="music-controls-left-content-singer">
+                                Sơn Tùng MTP
+                            </span>
+                        </div>
+                        <div class="music-controls-left-actions">
+                            <div class="music-controls-left-actions-tym-box">
+                                <i class="fas fa-heart music-controls-left-actions-tym"></i>
+                                <i class="far fa-heart music-controls-left-actions-tym-non"></i>
+                            </div>
+                            <i class="fas fa-ellipsis-h music-controls-left-actions-option"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-6 music-controls-wrap player">
+                    <div class="music-controls-center">
+                        <div class="control">
+                            <div class="btn btn-repeat">
+                                <i class="fas fa-redo"></i>
+                            </div>
+                            <div class="btn btn-prev">
+                                <i class="fas fa-step-backward"></i>
+                            </div>
+                            <div class="btn btn-toggle-play">
+                                <i class="fas fa-pause icon-pause"></i>
+                                <i class="fas fa-play icon-play"></i>
+                            </div>
+                            <div class="btn btn-next">
+                                <i class="fas fa-step-forward"></i>
+                            </div>
+                            <div class="btn btn-random">
+                                <i class="fas fa-random"></i>
+                            </div>
+                        </div>
+
+                        <div class="controls_time">
+                            <span class="controls_time--left">00:00</span>
+                            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                            <span class="controls_time--right">00:00</span>
+                        </div>
+                        <audio id="audio" src=""></audio>
+                    </div>
+                </div>
+                <div class="c-3">
+                    <div class="music-controls__right">
+                        <i
+                            class="music-controls__right-icon ipad-air-hiden js__main-color js__toast fas fa-photo-video"></i>
+                        <i
+                            class="music-controls__right-icon ipad-air-hiden js__main-color js__toast fas fa-microphone"></i>
+                        <i
+                            class="music-controls__right-icon ipad-air-hiden mr-20 js__main-color js__toast far fa-square"></i>
+                        <!-- music-controls__right--active -->
+                        <div class="music-controls__right-volume-icon">
+                            <i class="music-controls__right-icon js__main-color fas fa-volume-down"></i>
+                            <i class="music-controls__right-icon js__main-color fas fa-volume-mute"></i>
+                        </div>
+                        <div class="music-controls__volume-progress">
+                            <input id="progress1" class="music-controls__volume-input" type="range" value="100" step="1"
+                                min="0" max="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>

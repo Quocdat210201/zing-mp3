@@ -1,3 +1,9 @@
+:root{
+    --bg-content-color: #ffffff1a;
+    --pink-color: #ED2B91;
+    --layout-bg: #37075d;
+}
+
 .border-bottom{
     border-bottom: 1px solid #362f40;
     padding-bottom:15px
@@ -19,11 +25,24 @@
 }
 
 .mb-10{
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20 px !important;
+}
+
+.mr-10{
+    margin-right:  10px !important;
 }
 
 .mr-20{
-    margin-right:  20px;
+    margin-right:  20px !important;
+}
+
+.hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 
@@ -34,6 +53,33 @@
 
 .purple-color{
     background: var(--purple-color) !important;
+}
+
+.button {
+    border: none;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    align-items: center;
+    border-radius: 100px;
+    text-decoration: none;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+    background-color: var(--bg-content-color);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.button.button-primary {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .btn_transparent {
@@ -50,4 +96,59 @@
 
 .black-color{
     color: black !important;
+}
+
+.sidebar-active {
+    margin-left: 0;
+    background-color: var(--hover-bg);
+    transition: all 0.2s linear;
+    border-left: 3px solid var(--pink-color);
+}
+
+.info__author {
+    height: 17px;
+    margin: 3px 0 0;
+    /* font-weight: 600; */
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 1.7rem;
+    text-overflow: ellipsis;
+}
+
+.info__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.option-btn {
+    padding: 7px 11px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+.option-btn .btn--icon {
+    padding-top: 1px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.3rem;
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.option-btn:hover {
+    background-color: var(--bg-content-color);
+}
+
+.btn--icon.song__icon.primary, 
+.btn--icon.icon--mic.primary, 
+.btn--icon.icon--heart.primary {
+    color: var(--pink-color);
 }
